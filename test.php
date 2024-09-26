@@ -25,3 +25,18 @@ if($lastName =="Doe"){
 } else {
     echo "Unknown user.";
 }
+
+// Bad Example: Abbreviated Variable Names Gone Wild
+$ttlAmt = 1000; // Total amount
+$acntBal = 500; // Account balance
+$tran = 200; // Transaction amount
+$tranFee = 10; // Transaction fee
+$remBal = $ttlAmt - $tran - $tranFee; // Remaining balance
+
+if ($remBal <= 0) {
+    $msg = "Insufficient funds";
+} else {
+    $msg = "Transaction successful";
+}
+
+echo $msg;
