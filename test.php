@@ -14,3 +14,14 @@ for ($i = 0; $i < $length; $i++) {
     $total += $numbers[$i];
 }
 echo "Total: " . $total;
+
+// Bad Example: Inconsistent Formatting
+$first_name = "John";
+$lastName = "Doe";
+$email= "john.doe@example.com";
+
+if($lastName =="Doe"){
+    echo "Welcome, " . $first_name . "!";
+} else {
+    echo "Unknown user.";
+}
